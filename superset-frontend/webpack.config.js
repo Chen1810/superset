@@ -348,6 +348,7 @@ const config = {
           new RegExp(`${APP_DIR}/src`),
           /superset-ui.*\/src/,
           new RegExp(`${APP_DIR}/.storybook`),
+		      path.resolve(__dirname, './src'),
         ],
         use: [babelLoader],
       },
