@@ -76,6 +76,7 @@ import {
 import { PivotTableChartPlugin as PivotTableChartPluginV2 } from '@superset-ui/plugin-chart-pivot-table';
 import FilterBoxChartPlugin from '../FilterBox/FilterBoxChartPlugin';
 import TimeTableChartPlugin from '../TimeTable/TimeTableChartPlugin';
+import MixLineBarChartPlugin from '../MixLineBar/MixLineBarChartPlugin';
 import { FeatureFlag } from '../../featureFlags';
 
 export default class MainPreset extends Preset {
@@ -131,6 +132,7 @@ export default class MainPreset extends Preset {
         new TableChartPlugin().configure({ key: 'table' }),
         new TimePivotChartPlugin().configure({ key: 'time_pivot' }),
         new TimeTableChartPlugin().configure({ key: 'time_table' }),
+        new MixLineBarChartPlugin().configure({ key: 'mix_line_bar' }),
         new TreemapChartPlugin().configure({ key: 'treemap' }),
         new WordCloudChartPlugin().configure({ key: 'word_cloud' }),
         new WorldMapChartPlugin().configure({ key: 'world_map' }),

@@ -23,8 +23,8 @@ import {
 } from '@superset-ui/core';
 import {
   ControlPanelConfig,
-  expandControlConfig,
 } from '@superset-ui/chart-controls';
+import { expandControlConfig } from './expandControlConfig';
 
 import * as SECTIONS from 'src/explore/controlPanels/sections';
 
